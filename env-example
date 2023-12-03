@@ -1,0 +1,6 @@
+# Get them from your Pinecone account dashboard
+export PINECONE_API_KEY=0e08aab9-a9d8-438f-8b28-d429c325e131
+export PINECONE_ENVIRONMENT=gcp-starter
+
+# Get them from your OpenAI account
+export OPENAI_API_KEY=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
