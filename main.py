@@ -80,5 +80,5 @@ def test(query):
     with open("existing_file.html", "w") as outf:
         outf.write(str(soup))
 
-    webbrowser.open("file:/Users/amirbraham/Desktop/LauzHack2/existing_file.html",new=2)
+    webbrowser.open("file:/Users/amirbraham/Desktop/SwisscomQuest/existing_file.html",new=2)
     
