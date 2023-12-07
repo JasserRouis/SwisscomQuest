@@ -33,13 +33,13 @@ def split_and_save_data(file_index, data, num_parts=8):
         end_index = (i + 1) * part_size if i < num_parts - 1 else None
         part_data = data[start_index:end_index]
 
-        with open(f'json_part_{file_index}_{i+1}.json', 'w') as file:
+        with open(f'swisscom_split/json_part_{file_index}_{i+1}.json', 'w') as file:
             json.dump(part_data, file, indent=2)
 
 def main():
     for i in range(0,10):
         # Load JSON data from file
-        with open(f'swisscom_webpage_{i}.json', 'r') as file:
+        with open(f'swisscom_json_original/swisscom_webpage_{i}.json', 'r') as file:
             original_data = json.load(file)
 
         # Add "id" and "vector" fields to each entry
